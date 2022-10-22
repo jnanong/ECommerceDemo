@@ -45,7 +45,7 @@ export default function Header({darkMode, handleThemeChange} : Props) {
                         <Switch checked={darkMode} onChange={handleThemeChange} />
                     </Box>
 
-                    <List sx={{display: 'flex', flexDirection: 'horizontal'}}>
+                    <List sx={{display: 'flex'}}>
                         {midLinks.map(({title, path}) => (
                                 <ListItem
                                     component={NavLink}
@@ -74,7 +74,7 @@ export default function Header({darkMode, handleThemeChange} : Props) {
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
-                        <List sx={{ display: 'flex', flexDirection: 'horizontal' }}>
+                        <List sx={{ display: 'flex' }}>
                             {
                                 rightLinks.map(({ title, path }) => (
                                     <ListItem
